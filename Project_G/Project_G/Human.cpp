@@ -47,3 +47,24 @@ ostream& operator<<(ostream& os, Human& obj)
 
 	return os;
 }
+
+istream& operator<<(istream& is, Human& obj)
+{	
+	cout << "Все на кириллице" << endl;
+	cout << "Как вас зовут? " << endl;
+	is >> obj.name;
+	cout << "Ваш пол? " << endl;
+	is >> obj.genere;
+	cout << "Сколько вам лет? " << endl;
+	is >> obj.age;
+	cout << "Ваш вес? " << endl;
+	is >> obj.weight;
+	cout << "Какой у вас рост? " << endl;
+	is >> obj.height;
+	cout << "Насколько вы активный(низкая, умеренная, средняя, высокая)? " << endl;
+	is >> obj.typeOfActivity;
+
+	return is;
+}
+
+
