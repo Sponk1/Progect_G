@@ -1,4 +1,5 @@
 #include "Human.h"
+using namespace std;
 
 Human::Human()
 {
@@ -35,7 +36,7 @@ void Human::setName(string n) { name = n; }
 
 string Human::getName() { return name; }
 
-//реализация перешрузки функций ввода и вывода
+//реализация перегрузки функций ввода и вывода
 
 ostream& operator<<(ostream& os, Human& obj)
 {
@@ -48,7 +49,7 @@ ostream& operator<<(ostream& os, Human& obj)
 	return os;
 }
 
-istream& operator<<(istream& is, Human& obj)
+istream& operator>>(istream& is, Human& obj)
 {	
 	cout << "Все на кириллице" << endl;
 	cout << "Как вас зовут? " << endl;

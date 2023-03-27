@@ -21,9 +21,15 @@
     <ClCompile Include="Human.cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
+    <ClCompile Include="CalculationDiets.cpp">
+      <Filter>Файлы ресурсов</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Human.h">
+      <Filter>Файлы ресурсов</Filter>
+    </ClInclude>
+    <ClInclude Include="CalculationsDiets.h">
       <Filter>Файлы ресурсов</Filter>
     </ClInclude>
   </ItemGroup>

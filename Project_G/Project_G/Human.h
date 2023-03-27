@@ -41,7 +41,7 @@ public:
 
 	//перегрузка операторов ввода и вывода
 	friend ostream& operator<<(ostream& os, Human& obj);
-	friend istream& operator<<(istream& is, Human& obj);
+	friend istream& operator>>(istream& is, Human& obj);
 
 
 };
