@@ -6,9 +6,13 @@
 class Diet : public Human 
 {
 protected:
-
+	Human* human;
+	double kkal;
 
 public:
+	//рассчет ккал
+	double KklaPerDay();
+
 
 };
 
