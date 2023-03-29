@@ -30,6 +30,7 @@ public:
 	void setHeight(double h);
 	double getHeight();
 	//вид активности
+	string clculatingActivity();
 	void setActivity(string toa);
 	string getActivity();
 	//возраст
