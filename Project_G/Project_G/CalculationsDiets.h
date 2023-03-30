@@ -10,8 +10,13 @@ protected:
 	double kkal;
 
 public:
+	//конструкторы по умолчанию
+	Diet();
+
 	//рассчет ккал
-	double KklaPerDay();
+	double KklaPerDay(Human* h);
+	//информация о питании
+	void getInfoRitionalDiet();
 
 
 };

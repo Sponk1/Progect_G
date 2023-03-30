@@ -3,18 +3,16 @@
 #include <cmath>
 #include <string>
 #include "Human.h"
+#include "CalculationsDiets.h"
 
 using namespace std;
 
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	string a;
-	Human h;
-	a = h.clculatingActivity();
-	Human g;
-	g.setActivity(a);
-	cout << g.getActivity();
-	//Human g("adrey", "muzik", 35, 32, a, 32);
-	//cout << g;
+	Human man("Ivan", "мужской", 63, 169, "низкая", 19);
+	Diet kk1;
+	//double a = kk1.KklaPerDay(&man);
+	//cout << a;
+	kk1.getInfoRitionalDiet();
 }
