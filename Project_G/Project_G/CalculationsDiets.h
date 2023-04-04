@@ -17,7 +17,10 @@ public:
 	double KklaPerDay(Human* h);
 	//информация о питании
 	void getInfoRitionalDiet();
-
+	//индекст массы тела
+	double BMI(double h, double w);
+	//прием пищи(кол-во белков, жиров и углеводов)
+	double foodIntake();
 
 };
 
