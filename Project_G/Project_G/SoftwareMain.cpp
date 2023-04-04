@@ -10,9 +10,10 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	Human man("Ivan", "мужской", 63, 169, "низка€", 19);
+	Human man("Ivan", "мужской", 70, 170, "средн€€", 19);
 	Diet kk1;
 	//double a = kk1.KklaPerDay(&man);
 	//cout << a;
-	kk1.getInfoRitionalDiet();
+	//kk1.getInfoRitionalDiet();
+	cout << kk1.KklaPerDay(&man);
 }

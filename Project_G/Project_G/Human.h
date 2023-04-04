@@ -19,7 +19,7 @@ public:
 	Human();
 	Human(string n, string g, double w, double h, string toa, double a);
 
-	//получение информыции каждого параметра и его вывод
+	//получение информации каждого параметра и его вывод
 	//гнедер
 	void setGenere(string g);
 	string getGenere();
