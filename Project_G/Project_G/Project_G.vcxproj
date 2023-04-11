@@ -127,7 +127,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CalculationDiets.cpp" />
     <ClCompile Include="CalculationsDiets.cpp" />
     <ClCompile Include="Human.cpp" />
     <ClCompile Include="SoftwareMain.cpp" />
