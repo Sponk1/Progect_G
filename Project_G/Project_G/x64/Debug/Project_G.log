@@ -1,2 +1,8 @@
-﻿  SoftwareMain.cpp
-  Project_G.vcxproj -> C:\Users\zhlud\Desktop\Progect_G\Project_G\x64\Debug\Project_G.exe
+﻿  CalculationDiets.cpp
+c1xx : fatal  error C1083: Не удается открыть файл источник: CalculationDiets.cpp: No such file or directory,
+  CalculationsDiets.cpp
+  Human.cpp
+  SoftwareMain.cpp
+  Создание кода...
+C:\Users\zhlud\Desktop\Progect_G\Project_G\Project_G\Human.cpp(59): warning C4715: Human::clculatingActivity: значение возвращается не при всех путях выполнения
+C:\Users\zhlud\Desktop\Progect_G\Project_G\Project_G\CalculationsDiets.cpp(20): warning C4715: Diet::KklaPerDay: значение возвращается не при всех путях выполнения
