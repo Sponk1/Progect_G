@@ -1,4 +1,5 @@
 #include "Human.h"
+
 using namespace std;
 
 Human::Human()
@@ -28,33 +29,80 @@ string Human::clculatingActivity() ///доделать исключения
 {
 	int onFootTime, peTime, whileWork, score;
 	score = 0;
+
 	cout << "При отсутсвии той или ной активности, ставте 0; все время вводится в минутах" << endl;
 	cout << "Как долго вы ходите пешком в день? Введите значение: "; cin >> onFootTime; cout << endl;
 	cout << "Сколько вы тратите времени на физкультурой в течении недели? Введите значение: "; cin >> peTime; cout << endl;
 	cout << "Как долго вы находитесь в движении на работе(школа, университет и т.д.)? Введите значение: "; cin >> whileWork; cout << endl;
 
 	//сколько ходит пешком
-	if (onFootTime == 0) { score = score; }
-	else if (onFootTime > 0 and onFootTime < 30) { score += 1; }
-	else if (onFootTime >= 30 and onFootTime <= 60) { score += 2; }
-	else if (onFootTime >= 60 and onFootTime <= 120) { score += 3; }
-	else if (onFootTime > 120) { score += 4; }
+
+	if (onFootTime == 0) 
+	{ 
+		score = score; 
+	
+	}
+
+	else if ((onFootTime > 0) && (onFootTime < 30)) 
+	{ 
+		score += 1; 
+	}
+
+	else if ((onFootTime >= 30) && (onFootTime <= 60)) 
+	{ 
+		score += 2; 
+	}
+
+	else if ((onFootTime >= 60) && (onFootTime <= 120)) 
+	{ 
+		score += 3; 
+	}
+
+	else if (onFootTime > 120) 
+	{ 
+		score += 4; 
+	}
+
 	//занятия физкультурой в неделю
-	if (peTime == 0) { score = score; }
-	else if (peTime > 0 and peTime < 30) { score += 1; }
-	else if (peTime >= 30 and peTime <= 60) { score += 2; }
-	else if (peTime >= 60 and peTime <= 120) { score += 3; }
-	else if (peTime > 120) { score += 4; }
+
+	if (peTime == 0) 
+	{ 
+		score = score; 
+	}
+
+	else if ((peTime > 0) && (peTime < 30)) 
+	{ 
+		score += 1; 
+	}
+
+	else if ((peTime >= 30) && (peTime <= 60)) 
+	{ 
+		score += 2; 
+	}
+
+	else if ((peTime >= 60) && (peTime <= 120)) 
+	{ 
+		score += 3; 
+	}
+
+	else if (peTime > 120) 
+	{ 
+		score += 4; 
+	}
+
 	//активность на работе
+
 	if (whileWork == 0) { score = score; }
-	else if (whileWork > 0 and whileWork < 30) { score += 1; }
-	else if (whileWork >= 30 and whileWork <= 60) { score += 2; }
-	else if (whileWork >= 60 and whileWork <= 120) { score += 3; }
+	else if (whileWork > 0 && whileWork < 30) { score += 1; }
+	else if (whileWork >= 30 && whileWork <= 60) { score += 2; }
+	else if (whileWork >= 60 && whileWork <= 120) { score += 3; }
 	else if (whileWork > 120) { score += 4; }
+
 	//рассчет типа активности
+
 	if (score < 6) { return "низкая"; }
-	else if (score >= 6 and score <= 9) { return "средняя"; }
-	else if (score >= 10 and score <= 12) { return "умеренная"; }
+	else if (score >= 6 && score <= 9) { return "средняя"; }
+	else if (score >= 10 && score <= 12) { return "умеренная"; }
 
 }
 
